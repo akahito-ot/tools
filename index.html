@@ -52,10 +52,19 @@
             text-transform: uppercase;
         }
 
-        .news-item, .work-item {
+        .work-item {
             font-size: 14px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             line-height: 1.6;
+        }
+
+        .work-link {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .work-link:hover {
+            text-decoration: underline;
         }
 
         .contact {
@@ -73,32 +82,9 @@
             text-decoration: underline;
         }
 
-        .images {
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-        }
-
-        .placeholder-img {
-            width: 100%;
-            height: 150px;
-            background: #f5f5f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            color: #999;
-        }
-
         @media (max-width: 600px) {
             body {
                 padding: 40px 15px;
-            }
-            
-            .images {
-                grid-template-columns: 1fr;
-                gap: 15px;
             }
         }
     </style>
@@ -120,9 +106,15 @@
         <div class="news-item">Coming Soon: LazyOutputManager addon</div>
     </section>
 
-    <div class="images">
-        <div class="placeholder-img">AE Plugins</div>
-        <div class="placeholder-img">Blender Addons</div>
-    </div>
+    <section class="section">
+        <h2>AE</h2>
+        <div class="work-item"><a href="#" class="work-link">AK-Kuwahara</a></div>
+        <div class="work-item"><a href="#" class="work-link">AK-Chroma</a></div>
+    </section>
+
+    <section class="section">
+        <h2>Blender</h2>
+        <div class="work-item"><a href="#" class="work-link">LazyOutputManager</a></div>
+    </section>
 </body>
 </html>
